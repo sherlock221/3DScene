@@ -95,10 +95,12 @@
                 /** 3d模式 渲染 **/
                 -webkit-transform-style : preserve-3d;
 
-                width: 200px;
-                height: 200px;
+                width: 400px;
+                height: 400px;
                 margin:  0 auto;
                 position: relative;
+
+                margin-top: 40px;
             }
             .seqGroup li{
                 width: 200px;
@@ -161,15 +163,33 @@
 
 
 <h3>正方体</h3>
-<section class="scene">
+<section class="scene" >
 
-    <ul class="seqGroup">
-        <li class="seq-bottom">1</li>
-        <li class="seq-top">2</li>
-        <li class="seq-left">3</li>
-        <li class="seq-right">4</li>
-        <li class="seq-before">5</li>
-        <li class="seq-after">6</li>
+    <ul class="seqGroup" style="
+    -webkit-transform: rotateY(-22deg) rotateX(-20deg);
+">
+        <li class="seq-bottom" style="
+    /* display: none; */
+">1</li>
+        <li class="seq-top" style="
+    -webkit-transform-origin: right;
+    -webkit-transform: rotateY(-90deg);
+">2</li>
+        <li class="seq-left" style="
+    -webkit-transform-origin: left;
+    -webkit-transform: rotateY(90deg);
+">3</li>
+        <li class="seq-right" style="
+    -webkit-transform-origin: top;
+    -webkit-transform: rotateX(-90deg);
+">4</li>
+        <li class="seq-before" style="
+    -webkit-transform-origin: bottom;
+    -webkit-transform: rotateX(90deg);
+">5</li>
+        <li class="seq-after" style="
+    -webkit-transform: translateZ(-200px);
+">6</li>
 
     </ul>
 </section>
